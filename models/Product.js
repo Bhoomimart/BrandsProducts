@@ -7,7 +7,7 @@ const imageSchema = new mongoose.Schema({
 });
 
 
-const productSchema = new mongoose.Schema({
+const brandproductSchema = new mongoose.Schema({
     name: { type: String, required: true },
     category: { type: String, required: true },
     deviceName: { type: String, required: true },
@@ -15,4 +15,4 @@ const productSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 
-module.exports = mongoose.model('Product', productSchema);
+module.exports = mongoose.model('brandproduct', brandproductSchema);
